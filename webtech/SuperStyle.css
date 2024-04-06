@@ -62,15 +62,11 @@ body {
 
 .scrollmenu a {
   display: inline-block;
-  /* Display menu items in a row */
   color: #CB2F45;
-  /* Set text color */
+  
   text-align: center;
-  /* Center-align the text */
   padding: 7px 50px;
-  /* Add padding for spacing */
   text-decoration: none;
-  /* Remove underlines from links */
   margin: 0px 0px;
 }
 
@@ -194,7 +190,7 @@ body label {
   z-index: 2000;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+/* On smaller screens, where height is less than 450px */
 @media screen and (max-height: 450px) {
   .sidemenu {
     padding-top: 15px;
