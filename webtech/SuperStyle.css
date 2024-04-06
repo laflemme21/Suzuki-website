@@ -1,0 +1,206 @@
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #e9e8e8;
+  margin: 0;
+}
+
+
+
+/*header*/
+
+.header {
+  padding-top: 3px;
+  padding-bottom: 0px;
+  background: #E9E8E8;
+  color: #22388A;
+  font-family: Impact;
+  font-size: 30px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.headertext {
+  text-align: center;
+  font-family: Arial black, sans-serif;
+  font-size: 40px;
+  margin: 0px 0px;
+  padding: 10px 10px;
+
+}
+
+
+/*horizontal bar*/
+
+.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0;
+
+}
+
+.scrollmenu::-webkit-scrollbar {
+  display: none;
+}
+
+.active {
+  color: #FFFFFF;
+  background-color: #CB2F45;
+  margin: 0px 0px;
+  padding: 12px 50px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.scrollmenu a {
+  display: inline-block;
+  /* Display menu items in a row */
+  color: #CB2F45;
+  /* Set text color */
+  text-align: center;
+  /* Center-align the text */
+  padding: 7px 50px;
+  /* Add padding for spacing */
+  text-decoration: none;
+  /* Remove underlines from links */
+  margin: 0px 0px;
+}
+
+.scrollmenu a:hover {
+  background-color: #777;
+  /* Change background color on hover */
+}
+
+
+/*body*/
+.stuff {
+  top: 130.5px;
+  font-size: 30px;
+  right: 0px;
+  left: 0px;
+  position: relative;
+}
+
+.stuff p {
+  margin-left: 7%;
+  margin-right: 7%;
+  background-color: white;
+  margin-bottom: 8%;
+  padding: 2%;
+}
+
+.stuff img {
+  width: 86%;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.stuff h2 {
+  margin-top: 8%;
+  margin-left: 7%;
+  color: #22388A;
+}
+
+.stuff b {
+  color: #CB2F45;
+}
+
+.stuff h1 {
+  color: #22388A;
+}
+
+
+
+
+
+
+
+.sidemenu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #22388A;
+  overflow-x: hidden;
+  transition: 0.7s;
+  padding-top: 60px;
+}
+
+.sidemenu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.7s;
+}
+
+.sidemenu a:hover {
+  color: #CB2F45;
+}
+
+
+#main1 {
+  transition: margin-left .7s;
+}
+
+#main2 {
+  transition: margin-left .7s;
+}
+
+/* The checkbox checked behavior */
+#menu-btn:checked~.sidemenu {
+  width: 20%;
+}
+
+#menu-btn:checked~.sidemenu footer {
+  width: 20%;
+}
+
+#menu-btn:checked~#main1 {
+  margin-left: 20%;
+}
+
+#menu-btn:checked~#main2 {
+  margin-left: 20%;
+}
+
+/* Hide the checkbox */
+#menu-btn {
+  display: none;
+}
+
+/* The menu button */
+.menu-icon {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #e9e8e8;
+  color: #CB2F45;
+}
+
+body label {
+  z-index: 2000;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidemenu {
+    padding-top: 15px;
+  }
+
+  .sidemenu a {
+    font-size: 18px;
+  }
+}
